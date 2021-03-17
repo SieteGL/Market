@@ -39,7 +39,7 @@ class ProductManager(models.Manager):
         )
         #
         return consulta
-    
+    #diccionario que nos permite recibir varios valores que nos permitiran realizar el filtrado!
     def filtrar(self, **filters):
         if not filters['date_start']:
             filters['date_start'] = '2020-01-01'
